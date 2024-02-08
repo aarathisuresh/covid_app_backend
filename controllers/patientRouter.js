@@ -14,6 +14,10 @@ res.json({
 })
 
 
+router.get( "/viewall",async(req,res)=>{
+    let data=await patientModel.find()
+res.json(data)
 
+})
 
 module.exports=router
